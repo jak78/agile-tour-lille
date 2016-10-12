@@ -420,8 +420,7 @@ permalink: /conflike/
                       <!-- FEEDBACK                   -->
                       <!-- -------------------------- -->
                       {% assign nonFeedbackableSessions = '04 22 42' %}
-                      {% unless nonFeedbackableSessions contains confID %}
-                      <div class="conflike-feedback">
+                      <div class="conflike-feedback" {% if nonFeedbackableSessions contains confID %} style="display:none" {% endif %}>
                         <div class="conflike-feedback-banner" onclick="toggleDisplay('feedback-{{ confID }}')">
                           Donnez votre FeedBack >>
                         </div>
@@ -455,13 +454,12 @@ permalink: /conflike/
                             </div>
                           </div>
                           </br>
-                          <div>Votre Commentaire :</div>
+                          <div>Votre Commentaire (n.b. il est enregistré automatiquement) :</div>
                           <div class="form-group">
                             <textarea class="form-control" rows="5" id="{{ confID }}/comment" onkeyup="save('{{ confID }}')"></textarea>
                           </div>
                         </div>
                       </div>
-                      {% endunless %}
                     </div>
                 {% endfor %}
               </div>

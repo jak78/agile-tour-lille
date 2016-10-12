@@ -205,13 +205,14 @@
 }
 
 .conflike-feedback {
-  display:none;  
+  display:block;  
   margin:1px;
 }
 
 .conflike-feedback-banner {
   text-align:center;
-  background-color:lightgrey;
+  background-color:LightSlateGray;
+  color:white;
   padding:10px;
   font-size:1.5em;
   border-radius:16px;  
