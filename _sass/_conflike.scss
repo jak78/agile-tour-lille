@@ -183,7 +183,7 @@
 }
 
 .conflike-description {
-  display:block;  
+  display:none;  
   margin:1px;
   font-size:1.3em;
 }
@@ -201,7 +201,8 @@
   border-color:blue; 
   border-width:2px; 
   border-style:dotted; 
-  display:none
+  display:none;
+  font-size:1.4em;
 }
 
 .conflike-feedback {
@@ -221,18 +222,15 @@
 .conflike-feedback-content {
   background:lightgrey;  
   border-color:blue; 
-  border-width:2px; 
+  border-width:1px; 
   border-style:dotted; 
+  border-radius:16px;
   display:none;
 }
 
-
-
-
-
-
-
-
+.conflike-feedback-text {
+  font-size:1.4em;
+}
 
 .odd-slot-left-border {
   border-left-color:lightblue;

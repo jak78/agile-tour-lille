@@ -26,7 +26,7 @@ permalink: /conflike/
     if (url_id_paramater != '' && url_id_paramater != undefined) {
       userID = url_id_paramater;
     }
-    
+
     localStorage.userID = userID;
     userURL = "http://2016.agiletour-lille.org/conflike?id="+ userID
     document.getElementById('userURL').innerHTML=userURL;
@@ -274,7 +274,8 @@ permalink: /conflike/
   <!-- -------------------------- -->
   <!--  INTRODUCTION              -->
   <!-- -------------------------- -->
-  <div class="conflike-introduction">
+  Cette application est en <b>version bêta</b>. Elle est aussi totalement anonyme.
+  <div class="conflike-introduction" style="display:none">
     <div class="conflike-introduction-content">
       Cette application est en <b>version bêta</b>. Elle est aussi totalement anonyme.
       </br>
@@ -456,7 +457,7 @@ permalink: /conflike/
                           </br>
                           <div>Votre Commentaire (n.b. il est enregistré automatiquement) :</div>
                           <div class="form-group">
-                            <textarea class="form-control" rows="5" id="{{ confID }}/comment" onkeyup="save('{{ confID }}')"></textarea>
+                            <textarea class="form-control conflike-feedback-text" rows="5" id="{{ confID }}/comment" onkeyup="save('{{ confID }}')"></textarea>
                           </div>
                         </div>
                       </div>
